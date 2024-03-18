@@ -1,0 +1,20 @@
+name: Deploy website on push
+on: 
+  push:
+    branches:
+      - master
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get latest code
+      uses: actions/checkout@v4
+    
+    - name: Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: www.bizzself.top
+        username: ${{ secrets.ftp_password }}
+        password: ${{ secrets.ftp_password }}
+        server-dir: /dev.bizzself.top/
