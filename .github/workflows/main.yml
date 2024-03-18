@@ -14,8 +14,8 @@ jobs:
     - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server: 194.233.94.185
+        server: www.bizzself.top
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        server-dir: /
         port: 22
+        timeout: 60000
