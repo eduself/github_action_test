@@ -16,7 +16,7 @@ jobs:
       with:
         timeout_minutes: 1
         max_attempts: 3
-        server: www.bizzself.top
+        server: 194.233.94.185
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
         server-dir: /dev.bizzself.top/
