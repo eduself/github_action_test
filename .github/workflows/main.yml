@@ -18,5 +18,5 @@ jobs:
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
         protocol: ftps
-        port: 21
+        # port: 21
         # timeout: 120000
