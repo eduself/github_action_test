@@ -14,9 +14,9 @@ jobs:
     - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server: www.eduself.co
+        server: 194.233.94.185
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        protocol: ftps
-        port: 22
+        # protocol: ftps
+        # port: 22
         # timeout: 120000
